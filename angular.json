@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hotelapp": {
+    "ng-ng-dashboard": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hotelapp",
+            "outputPath": "dist/ng-ng-dashboard",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hotelapp:build"
+            "browserTarget": "ng-ng-dashboard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hotelapp:build:production"
+              "browserTarget": "ng-ng-dashboard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hotelapp:build"
+            "browserTarget": "ng-ng-dashboard:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "hotelapp-e2e": {
+    "ng-ng-dashboard-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hotelapp:serve"
+            "devServerTarget": "ng-ng-dashboard:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hotelapp:serve:production"
+              "devServerTarget": "ng-ng-dashboard:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "hotelapp"
+  "defaultProject": "ng-ng-dashboard"
 }
